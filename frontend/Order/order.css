@@ -99,6 +99,7 @@ text-decoration: underline;
     .nav li:last-child {
         margin-right: 0;
     }
+  
 }
 
 .presentation{
@@ -134,7 +135,107 @@ text-decoration: underline;
     height: 300px;
     top: -200px;
     width: 190%;
-    left: 50px;
+    left: 20px;
     border-radius: 5px;
     box-shadow: 10px 10px 5px rgba(0, 128, 0, 0.802);
   }
+
+  @media (max-width: 768px){
+    .carde img {
+top: -100px;
+    }
+  }
+
+  .product{
+    position: relative;
+    top: 200px;
+    background: linear-gradient(
+        to bottom,
+        #506b0ce0,
+        #0e3607f8
+        );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 300%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    
+    .card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    
+    .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    }
+    
+    .card img:hover {
+    transform: scale(1.1);
+    }
+    
+    .card .info {
+    margin-top: 10px;
+    text-align: center;
+    }
+    
+    .card .info h3 {
+        color: white;
+    margin: 0;
+    }
+    
+    .card .info p {
+    margin: 5px 0;
+    font-weight: bold;
+    }
+    
+    .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    }
+    
+    .quantity input {
+    width: 50px;
+    text-align: center;
+    }
+    
+    .quantity button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    }
+    
+    .quantity button:hover {
+    background-color: #0056b3;
+    }
+    
+    .order-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .order-btn:hover {
+    background-color: #218838;
+    }
