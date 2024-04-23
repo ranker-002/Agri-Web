@@ -5,10 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+   
 }
 
 header {
@@ -165,77 +167,93 @@ top: -100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    }
-    
-    .card {
-    width: 300px;
+    margin: 20px;
+}
+
+.card {
+    width: calc(20.23% - 30px);
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    }
+    box-shadow: 6px 6px 3px rgba(208, 211, 15, 0.583);
+    box-sizing: border-box;
+    backdrop-filter: blur(30px);
     
-    .card img {
-    width: 100%;
+}
+
+.card img {
+    width: 98%;
     height: auto;
     border-radius: 5px;
     transition: transform 0.5s;
-    }
+   
     
-    .card img:hover {
+}
+
+.card img:hover {
     transform: scale(1.1);
-    }
     
-    .card .info {
+}
+
+.card .info {
     margin-top: 10px;
     text-align: center;
-    }
     
-    .card .info h3 {
-        color: white;
+}
+
+.card .info h3 {
+    color: rgb(253, 250, 250);
+    font-family:  "Special Elite", system-ui;
     margin: 0;
-    }
-    
-    .card .info p {
+}
+
+.card .info p {
     margin: 5px 0;
+    color: rgb(255, 89, 0);
     font-weight: bold;
-    }
-    
-    .quantity {
+}
+
+.quantity {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    }
-    
-    .quantity input {
+}
+
+.quantity input {
     width: 50px;
     text-align: center;
-    }
-    
-    .quantity button {
+}
+
+.quantity button {
     background-color: #007bff;
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
-    }
-    
-    .quantity button:hover {
+}
+
+.quantity button:hover {
     background-color: #0056b3;
-    }
-    
-    .order-btn {
+}
+
+.order-btn {
     width: 100%;
     padding: 10px;
     background-color: #28a745;
     color: white;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    }
-    
-    .order-btn:hover {
-    background-color: #218838;
-    }
+}
+
+.order-btn:hover {
+    background-color: #1b5e2aef;
+}
+
+.footer{
+
+}
